@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/dahboard_bg_view"
+            />
+
+
+        <TextView
+            android:id="@+id/dashboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:layout_gravity="left"
+            android:paddingTop="56dp"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="User Name"
+            android:layout_gravity="right"
+            android:paddingTop="24dp"
+            android:textSize="12sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_gravity="center"
+            android:padding="32dp"
+            android:layout_marginTop="96dp">
+
+            <!-- Card 1: Injury Tracking -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardInjuryTracking"
+                style="@style/CardViewStyle"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/injury_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Injury tracking"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="70dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/my_primary"/>
+                <!-- Card Content -->
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 2: Assessment -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardSymptomMonitoring"
+                style="@style/CardViewStyle"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/symptoms_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sympton Assesment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="80dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/my_primary"/>
+                <!-- Card Content -->
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 3: Sym Assessment -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardConcussionAssessment"
+                style="@style/CardViewStyle"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/concussion_assesment_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Concusion Assesment"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="70dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/my_primary"/>
+
+                <!-- Card Content -->
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 4: Medical Reports -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardMedicalRecords"
+                style="@style/CardViewStyle"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/medical_records_icons"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Records"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="70dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/my_primary"/>
+                <!-- Card Content -->
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </GridLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_navigation_menu" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.core.widget.NestedScrollView>

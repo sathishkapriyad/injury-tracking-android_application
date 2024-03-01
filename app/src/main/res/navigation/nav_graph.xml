@@ -1,0 +1,21 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.ysju.injurytrackerapplication.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_injuryTrackingFragment"
+            app:destination="@id/injuryTrackingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/injuryTrackingFragment"
+        android:name="com.ysju.injurytrackerapplication.InjuryTrackingFragment"
+        android:label="Injury Tracking"
+        tools:layout="@layout/fragment_injury_tracking" />
+</navigation>

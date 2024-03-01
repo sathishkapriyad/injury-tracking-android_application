@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">InjuryTrackerApplication</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="dashboard">Dashboard</string>
+
+    <string name="logout">Log Out</string>
+    <string name="injury_tracking">Injury Tracking</string>
+    <string name="symptom_monitoring">Symptom Monitoring</string>
+    <string name="concussion_assessment">Concussion Assessment</string>
+    <string name="medical_records">Medical Records</string>
+    <string name="default_user_name">User</string>
+    <string name="injury_tracking_title">Injury Tracking</string>
+
+    <string name="hint_injury_type">Enter injury type</string>
+    <string name="hint_injury_location">Enter injury location</string>
+    <string name="injury_severity_options">Enter injury Options</string>
+    <string name="spinnerInjurySeverity">Enter injury Severity</string>
+    <string name="image_view_description">Image view description</string>
+    <string name="select_image">Select Image</string>
+    <string name="submit_injury">Submit Inquiry</string>
+    <string name="submit">Submit</string>
+    <string name="i_forgot_my_password">I forgot my password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="report_a_injury">Report a Injury</string>
+    <string name="type_of_injury">Type of Injury</string>
+
+
+</resources>

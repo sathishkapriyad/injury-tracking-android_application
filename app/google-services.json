@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "907053246664",
+    "project_id": "injurytracker-application",
+    "storage_bucket": "injurytracker-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907053246664:android:4c9b43f73452f443741dfd",
+        "android_client_info": {
+          "package_name": "com.ysju.InjuryTrackerApplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtUob3pO99il9omZHNxK5BzWbX5k9yLyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907053246664:android:f555aafd25b9c6a5741dfd",
+        "android_client_info": {
+          "package_name": "com.ysju.injurytrackerapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtUob3pO99il9omZHNxK5BzWbX5k9yLyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
